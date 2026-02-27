@@ -124,7 +124,7 @@ td {
     padding: 30px 30px 0 0;     /* 위, 오른쪽 여백 조절 */
     z-index: 9998;
     cursor: pointer;
-    pointer-events: none; 
+ /*   pointer-events: none; */
 }
 
 #kuma-modal {
