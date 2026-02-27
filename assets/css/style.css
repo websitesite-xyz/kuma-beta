@@ -1,0 +1,94 @@
+		*{
+ margin : 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+    font-weight: normal;
+}
+
+section {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    padding: 10px;
+    padding-top: 0;
+}
+
+.left {
+    overflow-y: scroll;
+}
+
+.kuma-nav {
+    text-align: right;
+    position: sticky;
+    top: 0; 
+    background-color: white;
+    padding: 10px;
+}
+
+#kuma-current, #kuma-past, #kuma-resource, #kuma-about, #kuma-archive, #kuma-people, #kuma-contact  {
+    border-bottom: 1px gainsboro solid;
+    padding-bottom: 10px;
+}
+
+.right {
+    left: 50%;
+    background-color: #FFFF92;
+    overflow-y: scroll;
+    color: firebrick;
+}
+
+.intro {
+    margin-top: 10px;
+}
+
+p {
+    font-size: 13pt;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+li:first-child {
+    margin-top: 15px;
+}
+
+img {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+table {
+    width: 100%;
+    line-height: 15.5pt;
+    table-layout: fixed;
+}
+
+td {
+    vertical-align: top;
+    white-space: nowrap;       /* 줄바꿈 금지 */
+    overflow: hidden;          /* 넘치는 부분 숨김 */
+    text-overflow: ellipsis;   /* ... 처리 */
+}
+
+.archive-date, .resource-download{
+    width: 40%;
+}
+
+.exkuma-nav {
+    position: sticky;
+    top: 0; 
+    background-color: #FFFF92;
+    padding: 10px;
+}
+
