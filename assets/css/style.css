@@ -106,7 +106,7 @@ td {
 
 #kuma-modal {
     position: relative;
-    background: #F5F06A;
+    background: #FFFF92;
     padding: 60px 80px;
     transform: rotate(-4deg);   /* 너무 크지 않게 */
     box-shadow: 15px 15px 15px 15px rgba(0,0,0,0.15);
@@ -125,4 +125,13 @@ td {
     background: rgba(0,0,0,0.2);  /* overlay 색과 동일하게 */
     top: 18px;
     right: 18px;
+}
+
+@media screen and (max-width: 704px) {
+  #kuma-modal {
+        transform: rotate(-4deg) scale(0.5);
+        transform-origin: top right;
+        box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.10);
+    }
+
 }
