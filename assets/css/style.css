@@ -83,7 +83,29 @@ td {
 }
 
 .archive-date, .resource-download{
-    width: 40%;
+    width: 20%;
+}
+
+.archive-tags {
+    width: 30%;
+}
+
+.tag-active {
+    display: inline-block;
+    padding: 1px 10px;
+    background: black;
+    color: white;
+    font-size: 14px;
+    border-radius: 999px; 
+    margin-right: 5px; 
+}
+
+.tag {
+    display: inline-block;
+    padding: 1px 10px;
+    font-size: 14px;
+    border-radius: 999px; 
+    border: 1px solid black;
 }
 
 .exkuma-nav {
@@ -102,6 +124,7 @@ td {
     padding: 30px 30px 0 0;     /* 위, 오른쪽 여백 조절 */
     z-index: 9998;
     cursor: pointer;
+    pointer-events: none; 
 }
 
 #kuma-modal {
