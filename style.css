@@ -129,6 +129,10 @@ td {
     border: 1px solid black;
 }
 
+.exkuma {
+    color: firebrick;
+}
+
 .exkuma-nav {
     position: sticky;
     top: 0; 
