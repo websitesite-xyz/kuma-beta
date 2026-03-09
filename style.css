@@ -1,0 +1,163 @@
+        *{
+ margin : 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+.whole {
+    margin: 0;
+}
+
+iframe {
+    border: 0;
+}
+
+.left {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+}
+
+.right {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 50%;
+    background-color: #FFFF92;
+    overflow-y: scroll;
+    color: firebrick;
+}
+
+body {
+    font-weight: normal;
+    font-family: sans-serif;
+    margin: 10px;
+}
+
+section {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    padding: 10px;
+    padding-top: 0;
+}
+
+.kuma-nav {
+    text-align: right;
+    position: sticky;
+    top: 0; 
+    background-color: white;
+    padding: 10px;
+}
+
+
+#kuma-current, #kuma-past, #kuma-resource, #kuma-about, #kuma-archive, #kuma-people, #kuma-contact  {
+    border-bottom: 1px gainsboro solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.intro {
+    margin-top: 10px;
+}
+
+p {
+    font-size: 13pt;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    font-family: monospace;
+    font-size: 11pt;
+}
+
+li {
+    list-style: none;
+}
+
+li:first-child {
+    margin-top: 15px;
+}
+
+img {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+table {
+    width: 100%;
+    line-height: 15.5pt;
+    table-layout: fixed;
+}
+
+td {
+    vertical-align: top;
+    white-space: nowrap;       /* 줄바꿈 금지 */
+    overflow: hidden;          /* 넘치는 부분 숨김 */
+    text-overflow: ellipsis;   /* ... 처리 */
+}
+
+.archive-date, .resource-download{
+    width: 20%;
+}
+
+.archive-tags {
+    width: 30%;
+}
+
+.tag-active {
+    display: inline-block;
+    padding: 1px 10px;
+    background: black;
+    color: white;
+    font-size: 14px;
+    border-radius: 999px; 
+    margin-right: 5px; 
+}
+
+.tag {
+    display: inline-block;
+    padding: 1px 10px;
+    font-size: 14px;
+    border-radius: 999px; 
+    border: 1px solid black;
+}
+
+.exkuma-nav {
+    position: sticky;
+    top: 0; 
+    background-color: #FFFF92;
+    padding: 10px;
+}
+
+.sticker {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  cursor: pointer;
+   background: #FFFF92;
+    padding: 60px 80px;
+    transform: rotate(-4deg);   /* 너무 크지 않게 */
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.10);
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    color: firebrick;
+
+}
+
+@media screen and (max-width: 704px) {
+  #kuma-modal {
+        transform: rotate(-4deg) scale(0.5);
+        transform-origin: top right;
+        box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.10);
+    }
+
+}
