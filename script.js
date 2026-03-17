@@ -1,4 +1,4 @@
-// Close Sticker
+// close sticker
 document.addEventListener("DOMContentLoaded", () => {
   const sticker = document.querySelector(".sticker");
 
@@ -10,8 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-
-// Language Toggle
+// language toggle
   const toggleBtn = document.getElementById("lang-toggle");
   const translatable = document.querySelectorAll("[data-ko][data-en]");
 
@@ -40,6 +39,36 @@ document.addEventListener("DOMContentLoaded", () => {
 
 $(document).ready(function(e){
     $(".content").multilingual([
-      "en", "num"
+      "en", "kr"
     ]);
   });
+
+
+
+
+
+// random bg color
+document.addEventListener("DOMContentLoaded", () => {
+  const themes = [
+    { bg: "#f1f3c9", text: "#441845" },
+    { bg: "#ffff00", text: "#e32105" },
+    { bg: "#dfffec", text: "#0000ff" },
+    { bg: "#d6b36f", text: "#e32105" }
+  ];
+
+  const selected = themes[Math.floor(Math.random() * themes.length)];
+
+  const exkuma = document.querySelector(".exkuma");
+  const toggle = document.querySelector(".lang-toggle-right");
+  const nav = document.querySelector(".exkuma-nav");
+  const sticker = document.querySelector(".sticker");
+
+  [exkuma, toggle, nav, sticker].forEach(el => {
+    if (el) {
+      el.style.backgroundColor = selected.bg;
+      el.style.color = selected.text;
+    }
+  });
+});
+
+

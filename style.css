@@ -19,8 +19,8 @@
   src: url('Pretendard-Regular.otf');
 }
 
-.ml-en {
-  font-family: 'comicsans';
+span.ml-en {
+  font-family: 'helvetica';
 }
 
 .whole {
@@ -37,11 +37,6 @@ iframe {
     border: 0;
 }
 
-.left {
-    position: absolute;
-    width: 50%;
-    height: 100%;
-}
 
 .lang-toggle {
   position: fixed;
@@ -70,23 +65,23 @@ iframe {
   background-color: #FFFF92;
 }
 
+.left {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+}
+
 .right {
     position: absolute;
     width: 50%;
     height: 100%;
     left: 50%;
-    background-color: #FFFF92;
     overflow-y: scroll;
-    color: firebrick;
 }
 
-section {
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    overflow: hidden;
-    padding: 10px;
-    padding-top: 0;
+.exkuma {
+    background-color: #FFFF92;
+    color: firebrick;
 }
 
 .kuma-nav {
@@ -97,7 +92,6 @@ section {
     padding: 10px;
     font-size: 13pt;
 }
-
 
 #kuma-current, #kuma-past, #kuma-resource, #kuma-about, #kuma-archive, #kuma-people, #kuma-contact, #exkuma-about  {
     border-bottom: 1px gainsboro solid;
@@ -118,7 +112,6 @@ a {
     color: black;
 }
 
-
 li {
     list-style: none;
 }
@@ -130,6 +123,7 @@ li:first-child {
 li:hover {
     font-family:'hover-comicsans';
     cursor: pointer;
+    font-size: 12.5pt;
 }
 
 img {
@@ -185,6 +179,7 @@ td {
     position: sticky;
     top: 0; 
     padding: 10px;
+    background-color: #FFFF92;
 }
 
 .sticker {
@@ -216,7 +211,7 @@ td {
     inset -2px -2px 4px rgba(255,255,255,0.5);
 }
 
-@media screen and (max-width: 704px) {
+@media screen and (max-width: 500px) {
   .sticker {
         transform: rotate(-4deg) scale(0.5);
         transform-origin: top right;

@@ -6,30 +6,31 @@
 	<meta name="description" content="설명">
 	<meta name="keywords" content="키워드1, 키워드2">
 	<link rel="stylesheet" href="style.css">
+	<link href="multilingual.css" rel="stylesheet" />
 	<meta name="viewport" content="width=device-width, user-scalable=no">
 
 </head>
 <body class="exkuma">
 	<div class="sticker" id="sticker">
     <div id="kuma-modal">
-       <p>
+       <p><span class="ml-en">
             UNSETTLED<br>
             INTERNATIONAL<br>
             WORKSHOP<br>
             PROGRAMME OF KUMA
-        </p>
+        </span></p>
   </div>
 </div>
 
 	<button id="lang-toggle" class="lang-toggle lang-toggle-right" aria-label="Switch language">EN</button>
 
 	<nav class="exkuma-nav">
-			<span class="ml-en"><ul>EX-KUMA
-				<li>CURRENT</li>
-				<li>PAST</li>
-				<li>RESOURCE</li>
+			<ul>EX-KUMA
 				<li>ABOUT</li>
-			</ul></span>
+				<li>EXHIBITION</li>
+				<li>OPEN CALL</li>
+				<li>NEWS</li>
+			</ul>
 		</nav>
 
 		<div class="content">
@@ -55,6 +56,8 @@
 			<img src="img/exkuma03.jpg">
 		</div>	
 
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="jquery.multilingual.js"></script>
 		<script src="script.js"></script>
 
 </body>
