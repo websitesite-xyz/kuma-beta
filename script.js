@@ -1,3 +1,4 @@
+// Close Sticker
 document.addEventListener("DOMContentLoaded", () => {
   const sticker = document.querySelector(".sticker");
 
@@ -8,25 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement(
-    {pageLanguage: 'ko', includedLanguages: 'en'},
-    'google_translate_element'
-  );
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  const btn = document.getElementById("translate-en");
-
-  btn.addEventListener("click", () => {
-    const select = document.querySelector(".goog-te-combo");
-    if (select) {
-      select.value = "en";
-      select.dispatchEvent(new Event("change"));
-    }
-  });
-});
 
 
 // Language Toggle
@@ -51,4 +33,13 @@ document.addEventListener("DOMContentLoaded", () => {
   toggleBtn.addEventListener("click", () => {
     const current = document.documentElement.lang === "en" ? "en" : "ko";
     setLanguage(current === "ko" ? "en" : "ko");
+  });
+
+
+//multilingual
+
+$(document).ready(function(e){
+    $(".content").multilingual([
+      "en", "num"
+    ]);
   });

@@ -4,13 +4,31 @@
  box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'helvetica';
+  src: url('Helvetica.ttf');
+}
+
+@font-face {
+  font-family: 'hover-comicsans';
+  src: url('Ldfcomicsans-jj7l.ttf');
+}
+
+@font-face {
+  font-family: 'pretendard';
+  src: url('Pretendard-Regular.otf');
+}
+
+.ml-en {
+  font-family: 'comicsans';
+}
+
 .whole {
     margin: 0;
 }
 
 body {
-    font-weight: normal;
-    font-family: sans-serif;
+    font-family: 'pretendard', sans-serif;
     margin: 10px;
     font-size: 13pt;
 }
@@ -28,12 +46,17 @@ iframe {
 .lang-toggle {
   position: fixed;
   top: 10px;
-  z-index: 10000;
+  z-index: 100;
   border: 0;
   padding: 6px 10px;
   font-size: 13pt;
   cursor: pointer;
-  font-family: sans-serif;
+  font-family: 'helvetica';
+}
+
+.lang-toggle:hover {
+    font-family: 'hover-comicsans';
+    cursor: pointer;
 }
 
 .lang-toggle-left {
@@ -43,8 +66,8 @@ iframe {
 
 .lang-toggle-right {
   right: 10px;
-  background: #FFFF92;
   color: firebrick;
+  background-color: #FFFF92;
 }
 
 .right {
@@ -95,10 +118,6 @@ a {
     color: black;
 }
 
-a:hover {
-    font-family: monospace;
-    font-size: 11pt;
-}
 
 li {
     list-style: none;
@@ -106,6 +125,11 @@ li {
 
 li:first-child {
     margin-top: 15px;
+}
+
+li:hover {
+    font-family:'hover-comicsans';
+    cursor: pointer;
 }
 
 img {
@@ -155,13 +179,11 @@ td {
 
 .exkuma {
     color: firebrick;
-    background-color: #FFFF92;
 }
 
 .exkuma-nav {
     position: sticky;
     top: 0; 
-    background-color: #FFFF92;
     padding: 10px;
 }
 
@@ -171,19 +193,31 @@ td {
   right: 20px;
   z-index: 9999;
   cursor: pointer;
-   background: #FFFF92;
-    padding: 60px 80px;
-    transform: rotate(-4deg);   /* 너무 크지 않게 */
-    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.10);
-    font-weight: bold;
-    letter-spacing: 1px;
-    text-align: center;
-    color: firebrick;
+  padding: 60px 80px;
+  transform: rotate(-4deg);
+  box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.10);
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+  background-color: #FFFF92;
+}
 
+.sticker::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.05);
+  box-shadow:
+    inset 2px 2px 4px rgba(0,0,0,0.15),
+    inset -2px -2px 4px rgba(255,255,255,0.5);
 }
 
 @media screen and (max-width: 704px) {
-  #kuma-modal {
+  .sticker {
         transform: rotate(-4deg) scale(0.5);
         transform-origin: top right;
         box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.10);
