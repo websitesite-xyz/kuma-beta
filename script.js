@@ -43,33 +43,29 @@ $(document).ready(function(e){
     ]);
   });
 
-
-
-
-
 // random bg color
-document.addEventListener("DOMContentLoaded", () => {
-  const themes = [
-    { bg: "#f1f3c9", text: "#441845" },
-    { bg: "#ffff00", text: "#e32105" },
-    { bg: "#dfffec", text: "#0000ff" },
-    { bg: "#d6b36f", text: "#e32105" }
-  ];
+// document.addEventListener("DOMContentLoaded", () => {
+//   const themes = [
+//     { bg: "#f1f3c9", text: "#441845" },
+//     { bg: "#ffff00", text: "#e32105" },
+//     { bg: "#dfffec", text: "#0000ff" },
+//     { bg: "#d6b36f", text: "#e32105" }
+//   ];
 
-  const selected = themes[Math.floor(Math.random() * themes.length)];
+//   const selected = themes[Math.floor(Math.random() * themes.length)];
 
-  const exkuma = document.querySelector(".exkuma");
-  const toggle = document.querySelector(".lang-toggle-right");
-  const nav = document.querySelector(".exkuma-nav");
-  const sticker = document.querySelector(".sticker");
+//   const exkuma = document.querySelector(".exkuma");
+//   const toggle = document.querySelector(".lang-toggle-right");
+//   const nav = document.querySelector(".exkuma-nav");
+//   const sticker = document.querySelector(".sticker");
 
-  [exkuma, toggle, nav, sticker].forEach(el => {
-    if (el) {
-      el.style.backgroundColor = selected.bg;
-      el.style.color = selected.text;
-    }
-  });
-});
+//   [exkuma, toggle, nav, sticker].forEach(el => {
+//     if (el) {
+//       el.style.backgroundColor = selected.bg;
+//       el.style.color = selected.text;
+//     }
+//   });
+// });
 
 // collection hover for img
 document.addEventListener("DOMContentLoaded", () => {
@@ -102,4 +98,5 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
 
