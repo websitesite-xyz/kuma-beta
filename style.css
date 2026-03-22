@@ -29,8 +29,17 @@ span.ml-en {
 
 body {
     font-family: 'pretendard', sans-serif;
-    margin: 10px;
+    margin: 0px;
     font-size: 13pt;
+    line-height: 1.5;
+    margin: 10px;
+    word-break: keep-all;
+}
+
+p, li, td, a, h1, h2, h3, h4 {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  line-height: 1.5;
 }
 
 iframe {
@@ -92,7 +101,7 @@ iframe {
     font-size: 13pt;
 }
 
-#kuma-current, #kuma-past, #kuma-resource, #kuma-about, #kuma-collections, #kuma-archive, #kuma-people, #kuma-news, #kuma-contact, #exkuma-about  {
+#kuma-current, #kuma-past, #kuma-resource, #kuma-about, #kuma-collections, #kuma-archive, #kuma-people, #kuma-news, #kuma-contact, #exkuma-about, #exkuma-news, #exkuma-logos  {
     border-bottom: 1px gainsboro solid;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -101,11 +110,6 @@ iframe {
 #kuma-collections li {
   position: relative;
   cursor: pointer;
-}
-
-.collection-list {
-  margin-top: 15px;
-  padding-left: 0;
 }
 
 .collection-list li {
@@ -130,6 +134,7 @@ iframe {
 .collection-list li:hover .collection-preview {
   display: block;
 }
+
 .intro {
     margin-top: 10px;
 }
@@ -145,10 +150,6 @@ a {
 
 li {
     list-style: none;
-}
-
-li:first-child {
-    margin-top: 10px;
 }
 
 a:hover {
@@ -211,6 +212,17 @@ td {
     top: 0; 
     padding: 10px;
     background-color: #FFFF92;
+}
+
+.exkuma-logos {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.logo {
+    width: auto;
+  height: 80px;
 }
 
 .sticker {
