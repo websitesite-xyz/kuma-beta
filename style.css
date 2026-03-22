@@ -255,6 +255,16 @@ td {
 }
 
 @media screen and (max-width: 500px) {
+    
+body {
+    overflow-x: hidden;
+}
+
+.logo {
+    width: auto;
+  height: 50px;
+}
+
   .sticker {
         transform: rotate(-4deg) scale(0.5);
         transform-origin: top right;
