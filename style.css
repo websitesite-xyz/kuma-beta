@@ -37,7 +37,6 @@ iframe {
     border: 0;
 }
 
-
 .lang-toggle {
   position: fixed;
   top: 10px;
@@ -93,12 +92,44 @@ iframe {
     font-size: 13pt;
 }
 
-#kuma-current, #kuma-past, #kuma-resource, #kuma-about, #kuma-archive, #kuma-people, #kuma-contact, #exkuma-about  {
+#kuma-current, #kuma-past, #kuma-resource, #kuma-about, #kuma-collections, #kuma-archive, #kuma-people, #kuma-news, #kuma-contact, #exkuma-about  {
     border-bottom: 1px gainsboro solid;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
+#kuma-collections li {
+  position: relative;
+  cursor: pointer;
+}
+
+.collection-list {
+  margin-top: 15px;
+  padding-left: 0;
+}
+
+.collection-list li {
+  position: relative;
+  list-style: none;
+  margin-bottom: 12px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.collection-preview {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: calc(50%);
+  width: 150px !important;
+  height: auto;
+  background: white;
+  z-index: 1000;
+}
+
+.collection-list li:hover .collection-preview {
+  display: block;
+}
 .intro {
     margin-top: 10px;
 }
@@ -117,13 +148,13 @@ li {
 }
 
 li:first-child {
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
-li:hover {
+a:hover {
     font-family:'hover-comicsans';
     cursor: pointer;
-    font-size: 12.5pt;
+    font-size: 12.3pt;
 }
 
 img {

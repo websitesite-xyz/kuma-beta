@@ -71,4 +71,35 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// collection hover for img
+document.addEventListener("DOMContentLoaded", () => {
+  const items = document.querySelectorAll("#kuma-collections li");
+
+  const preview = document.createElement("div");
+  preview.className = "hover-preview";
+
+  const previewImg = document.createElement("img");
+  preview.appendChild(previewImg);
+
+  document.body.appendChild(preview);
+
+  items.forEach((item) => {
+    item.addEventListener("mouseenter", () => {
+      const imageSrc = item.getAttribute("data-image");
+      if (!imageSrc) return;
+
+      previewImg.src = imageSrc;
+      preview.style.display = "block";
+    });
+
+    item.addEventListener("mousemove", (e) => {
+      preview.style.left = e.clientX + 20 + "px";
+      preview.style.top = e.clientY + 20 + "px";
+    });
+
+    item.addEventListener("mouseleave", () => {
+      preview.style.display = "none";
+    });
+  });
+});
 
