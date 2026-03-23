@@ -111,9 +111,17 @@ iframe {
     scroll-margin-top: 150px;
 }
 
+#exkuma-about, #exkuma-news, #exkuma-logos {
+  border-bottom: 1px firebrick solid;
+}
+
 #exkuma-news {
-    border-top: 1px gainsboro solid;
+  border-top: 1px firebrick solid;
     margin-top: 10px;
+}
+
+.firebrick-news {
+  color: firebrick;
 }
 
 #kuma-collections li {
@@ -219,6 +227,16 @@ td {
     border: 1px solid black;
 }
 
+.tag-colored {
+  color: #FFFF92;
+  background-color: firebrick;
+  border: 1px solid firebrick;
+}
+
+.tag-color-border {
+  border: 1px solid firebrick;
+}
+
 .exkuma {
     color: firebrick;
 }
@@ -239,25 +257,26 @@ td {
   display: flex;
   flex-direction:column;
   gap: 10px;
-  border-radius: 44px;
+/*  border-radius: 44px;*/
   align-items: stretch;
 }
 
 .opencall-unit{
 margin-top: 10px;
   display:flex;
-  gap:30px;
-  border-radius:25px;
+  gap: 30px;
+/*  border-radius:25px;*/
   padding:25px;
-  background-color: palegoldenrod;
+  border: 1px firebrick solid;
 }
 
 .opencall-image{
   width: 200px;
-  border-radius:20px;
+/*  border-radius:20px;*/
   background-size:cover;
   background-position:center;
   background-repeat:no-repeat;
+  border: 1px firebrick solid;
 }
 
 .opencall-text{
@@ -268,6 +287,7 @@ margin-top: 10px;
   display: flex;
   gap: 20px;
   align-items: center;
+  justify-content: center;
 }
 
 .logo {
